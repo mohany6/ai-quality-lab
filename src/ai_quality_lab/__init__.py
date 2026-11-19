@@ -1,0 +1,68 @@
+"""AI Quality Lab: LLM and RAG evaluation primitives for pytest suites."""
+
+from .harness import (
+    EvalCase,
+    EvalResult,
+    QualityGateError,
+    SuiteReport,
+    assert_quality_gates,
+    compare_to_baseline,
+    load_cases,
+    run_case,
+    run_suite,
+    to_baseline,
+)
+from .metrics import (
+    CostModel,
+    citation_accuracy,
+    citation_recall,
+    contains_forbidden,
+    contains_terms,
+    exact_match,
+    groundedness,
+    normalise,
+    percentile,
+    similarity,
+    token_f1,
+    tokenize,
+    unsupported_numbers,
+)
+from .providers import Completion, OpenAICompatibleProvider, ScriptedProvider
+from .rag import BM25Retriever, Document, RetrievalCase, extractive_answer, retrieval_metrics
+from .reporting import write_json_report, write_junit_report
+
+__all__ = [
+    "BM25Retriever",
+    "Completion",
+    "CostModel",
+    "Document",
+    "EvalCase",
+    "EvalResult",
+    "OpenAICompatibleProvider",
+    "QualityGateError",
+    "RetrievalCase",
+    "ScriptedProvider",
+    "SuiteReport",
+    "assert_quality_gates",
+    "citation_accuracy",
+    "citation_recall",
+    "compare_to_baseline",
+    "contains_forbidden",
+    "contains_terms",
+    "exact_match",
+    "extractive_answer",
+    "groundedness",
+    "load_cases",
+    "normalise",
+    "percentile",
+    "retrieval_metrics",
+    "run_case",
+    "run_suite",
+    "similarity",
+    "to_baseline",
+    "token_f1",
+    "tokenize",
+    "unsupported_numbers",
+    "write_json_report",
+    "write_junit_report",
+]

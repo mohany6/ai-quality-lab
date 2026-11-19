@@ -1,0 +1,8 @@
+{"id": "rag-001", "question": "What is the rate limit for the Payments API?", "relevant_ids": ["helios-rate-limits"], "expected_terms": ["600", "minute"], "k": 3}
+{"id": "rag-002", "question": "How long does a Helios bearer token last?", "relevant_ids": ["helios-auth"], "expected_terms": ["60 minutes"], "k": 3}
+{"id": "rag-003", "question": "Which header signs a webhook payload?", "relevant_ids": ["helios-webhooks"], "expected_terms": ["X-Helios-Signature"], "k": 3}
+{"id": "rag-004", "question": "How long are idempotency keys retained?", "relevant_ids": ["helios-idempotency"], "expected_terms": ["24 hours"], "k": 3}
+{"id": "rag-005", "question": "Which status code means a card was declined?", "relevant_ids": ["helios-errors"], "expected_terms": ["402"], "k": 3}
+{"id": "rag-006", "question": "What limit does a list endpoint accept for page size?", "relevant_ids": ["helios-pagination"], "expected_terms": ["100"], "k": 3}
+{"id": "rag-007", "question": "How many days do I have to refund a payment?", "relevant_ids": ["helios-refunds"], "expected_terms": ["180"], "k": 3}
+{"id": "rag-008", "question": "Which test card number produces a declined payment?", "relevant_ids": ["helios-testing"], "expected_terms": ["4000000000000002"], "k": 3}
